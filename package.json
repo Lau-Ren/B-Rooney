@@ -7,8 +7,8 @@
     "dev:build-js": "watchify  src/index.js -o public/js/app.js -v",
     "dev:watch": "npm run build-js",
     "dev:start": "http-server public -p 8008",
-    "postinstall": "browserify src/index.js -o public/bundle.js -t babelify",
-    "start": "babel-node index.js --presets es2015,stage-0"
+    "build": "browserify src/index.js -o public/bundle.js -t babelify",
+    "start": "babel-node index.js --presets es2015,stage-2"
   },
   "repository": {
     "type": "git",
@@ -29,10 +29,15 @@
     ]
   },
   "dependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.9.1",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
+    "babel-preset-stage-2": "^6.5.0",
     "babelify": "^7.2.0",
+    "body-parser": "^1.15.2",
     "browserify": "^13.0.0",
+    "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
     "http-server": "^0.8.5",
     "jquery": "^2.2.0",
