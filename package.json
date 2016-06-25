@@ -1,7 +1,7 @@
 {
-  "name": "mvc-scaffold",
+  "name": "Brysons Portfolio",
   "version": "1.0.0",
-  "description": "Learning about MVC.",
+  "description": "Brysons portfolio.",
   "main": "src/index.js",
   "scripts": {
     "build-js": "watchify  src/index.js -o public/js/app.js -v",
@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dev-academy-challenges/mvc-scaffold.git"
+    "url": "git+https://github.com/Lau-Ren/B-Rooney.git"
   },
   "author": "Lauren Colls <colls.lauren@gmail.com> (http://laurencolls.com/)",
   "license": "MIT",
-  "homepage": "https://github.com/dev-academy-challenges/mvc-scaffold#readme",
+  "homepage": "https://github.com/lau-ren/B-Rooneyreadme",
   "babel": {
     "presets": [
       "es2015",
