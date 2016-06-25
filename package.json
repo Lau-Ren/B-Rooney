@@ -2,10 +2,10 @@
   "name": "Brysons-Portfolio",
   "version": "1.0.0",
   "description": "Brysons portfolio.",
-  "main": "src/index.js",
+  "main": "public/src/app.js",
   "scripts": {
     "build-js": "watchify  src/index.js -o public/js/app.js -v",
-    "postinstall": "npm run build-js",
+    "watch": "npm run build-js",
     "start": "http-server public -p 8008"
   },
   "repository": {
