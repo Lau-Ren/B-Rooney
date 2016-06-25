@@ -7,7 +7,7 @@
     "dev:build-js": "watchify  src/index.js -o public/js/app.js -v",
     "dev:watch": "npm run build-js",
     "dev:start": "http-server public -p 8008",
-    "build": "browserify src/index.js -o public/bundle.js -t babelify",
+    "postinstall": "browserify src/index.js -o public/bundle.js -t babelify",
     "start": "babel-node index.js --presets es2015,stage-0"
   },
   "repository": {
