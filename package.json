@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build-js": "watchify  src/index.js -o public/js/app.js -v",
-    "preinstall": "npm run build-js",
+    "postinstall": "npm run build-js",
     "start": "http-server public -p 8008"
   },
   "repository": {
