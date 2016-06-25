@@ -2,11 +2,13 @@
   "name": "Brysons-Portfolio",
   "version": "1.0.0",
   "description": "Brysons portfolio.",
-  "main": "public/src/app.js",
+  "main": "src/index.js",
   "scripts": {
-    "build-js": "watchify  src/index.js -o public/js/app.js -v",
-    "watch": "npm run build-js",
-    "start": "http-server public -p 8008"
+    "dev:build-js": "watchify  src/index.js -o public/js/app.js -v",
+    "dev:watch": "npm run build-js",
+    "dev:start": "http-server public -p 8008",
+    "build": "browserify source/index.js -o public/bundle.js -t babelify",
+    "start": "babel-node index.js --presets es2015,stage-0"
   },
   "repository": {
     "type": "git",
@@ -31,8 +33,10 @@
     "babel-preset-stage-0": "^6.3.13",
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
+    "express": "^4.14.0",
     "http-server": "^0.8.5",
     "jquery": "^2.2.0",
+    "path": "^0.12.7",
     "watchify": "^3.7.0"
   }
 }
