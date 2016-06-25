@@ -52,7 +52,7 @@ export default class Controller {
   }
   popupVideosButton() {
     var videos = this.model.getVideos()
-    
+
     this.view.showVideos(videos)
 
   }
@@ -62,6 +62,6 @@ export default class Controller {
     this.view.playThumbs()
   }
 
- 
+
 
 }
