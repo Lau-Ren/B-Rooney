@@ -11,7 +11,8 @@ export default () => {
   app.use(require('body-parser').urlencoded({ extended: true }))
 
   app.get('/', function (req, res) {
-    res.sendFile('../public/index.html')
+    
+    res.sendFile('./public/index.html')
   })
 
   app.listen(process.env.PORT || 3000, function () {
