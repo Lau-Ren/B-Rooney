@@ -65,16 +65,16 @@ export default class View {
   }
 
   showPopupAbout() {
-    $('.popup-about').toggle()
+    $('#popup-about__content').toggle()
 
-    $('.popup-cv').hide()
+    $('#popup-cv__content').toggle()
 
   }
 
   showPopupCV() {
-    $('#popup-cv').toggle()
+    $('#popup-cv__content').toggle()
 
-    $('#popup-about').hide()
+    $('#popup-about__content').toggle()
   }
 
   showVideos(videosArr) {
@@ -88,9 +88,10 @@ export default class View {
     $('.video-view').show()
 
       $('.close').click(function(){
-        $('.video-view-view').fadeOut()
+        $('.video-view').fadeOut()
         $('.home-view').fadeTo(200,1)
-        $('.video-view').show()
+        $('.home-view').show()
+        $('.video-view').hide()
     })
 
     // videosArr.forEach((video) => {
@@ -126,8 +127,6 @@ export default class View {
 
 
   }
-
-
 
   playThumbs () {
     console.log("play thumbs in view");

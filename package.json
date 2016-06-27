@@ -4,8 +4,8 @@
   "description": "Brysons portfolio.",
   "main": "src/index.js",
   "scripts": {
-    "dev:build-js": "watchify  src/index.js -o public/js/app.js -v",
-    "dev:watch": "npm run build-js",
+    "dev:build-js": "watchify  src/index.js -o public/bundle.js -v",
+    "dev:watch": "npm run dev:build-js",
     "dev:start": "http-server public -p 8008",
     "postinstall": "browserify src/index.js -o public/bundle.js -t babelify",
     "start": "node index.js"
