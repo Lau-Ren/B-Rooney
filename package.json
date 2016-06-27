@@ -8,7 +8,7 @@
     "dev:watch": "npm run build-js",
     "dev:start": "http-server public -p 8008",
     "postinstall": "browserify src/index.js -o public/bundle.js -t babelify",
-    "start": "babel-node index.js --presets es2015,stage-2"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
