@@ -3,7 +3,15 @@ body {
   color: OldLace;
   font-family: Verdana, sans-serif;
 }
+a {
+  text-decoration: underline;
+  color: white;
+ 
 
+}
+ul{
+  list-style: none;
+}
 
 header {
   display: flex;
@@ -95,7 +103,9 @@ header {
 
 }
 
-
+#popup-cv__content{
+  text-align: left;
+}
 
 /*SLIDES*/
 .slides-navigation{
@@ -165,6 +175,16 @@ display: none;
   text-align: center;
 
 
+}
+.popup-container {
+  overflow: scroll;
+}
+
+.popup-inner {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .video-view {
