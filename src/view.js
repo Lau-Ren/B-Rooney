@@ -57,24 +57,59 @@ export default class View {
     $('.popup').fadeIn(function(){
       $(this).css({ "display": "flex", "justify-content": "center" })
         $('.popup popup-contents').show()
+      
+        $('#popup-about__content').show()
+        $('#popup-cv__content').hide()
+        $('#popup-contact__content').hide()
         $('.close').click(function(){
           $('.popup').fadeOut();
           $('.logo').fadeTo(200,1)
+          $('#popup-about__content').hide()
+          $('#popup-cv__content').hide()
+          $('#popup-contact__content').hide()
+          $('#popup-cv').css({"border-bottom": "none"})
+          $('#popup-about').css({"border-bottom": "none"})
+          $('#popup-contact').css({"border-bottom": "none"})
         })
       })
   }
 
   showPopupAbout() {
-    $('#popup-about__content').toggle()
+    console.log("trying to show ABOUT info in the view")
 
-    $('#popup-cv__content').toggle()
+    $('#popup-about__content').show()
+    $('#popup-about').css({"border-bottom":"solid"})
+
+    $('#popup-cv__content').hide()
+    $('#popup-contact__content').hide()
+    $('#popup-cv').css({"border-bottom":"none"})
+    $('#popup-contact').css({"border-bottom":"none"})
 
   }
 
   showPopupCV() {
-    $('#popup-cv__content').toggle()
+        console.log("trying to show CV in the view")
 
-    $('#popup-about__content').toggle()
+    $('#popup-cv__content').show()
+    $('#popup-cv').css({"border-bottom":"solid"})
+
+
+    $('#popup-about__content').hide()
+    $('#popup-contact__content').hide()
+    $('#popup-about').css({"border-bottom":"none"})
+    $('#popup-contact').css({"border-bottom":"none"})
+  }
+
+  showPopupContact() {
+    console.log("trying to show contact info in the view")
+    $('#popup-contact__content').show()
+    $('#popup-contact').css({"border-bottom":"solid"})
+
+
+    $('#popup-about__content').hide()
+    $('#popup-cv__content').hide()
+    $('#popup-cv').css({"border-bottom":"none"})
+    $('#popup-about').css({"border-bottom":"none"})
   }
 
   showVideos(videosArr) {

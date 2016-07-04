@@ -50,6 +50,12 @@ export default class Controller {
     this.view.showPopupCV()
 
   }
+  popupContactButton() {
+    console.log("trying to show contact info in the CONTROLLER")
+
+    this.view.showPopupContact()
+
+  }
   popupVideosButton() {
     var videos = this.model.getVideos()
 

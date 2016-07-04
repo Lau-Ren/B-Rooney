@@ -49,6 +49,12 @@ export default class Router {
         this.controller.popupCVButton()
       })
 
+      $('#popup-contact').on('click', (event) => {
+        console.log("trying to show contact info in the ROUTER")
+
+        this.controller.popupContactButton()
+      })
+
       $('#popup-videos').on('click', (event) => {
         this.controller.popupVideosButton()
       })
