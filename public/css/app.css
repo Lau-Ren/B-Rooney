@@ -191,12 +191,10 @@ display: none;
   background-color: rgba(0, 0, 0, 0.9);
 
   text-align: center;
-
-
-}
-.popup-container {
   overflow: scroll;
+
 }
+
 
 .popup-inner {
   padding-left: 4rem;
