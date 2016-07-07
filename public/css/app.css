@@ -3,7 +3,7 @@ body {
   color: OldLace;
   font-family: Verdana, sans-serif;
 }
-a {
+.link {
   text-decoration: underline;
   color: white;
  
