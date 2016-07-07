@@ -25,8 +25,8 @@ export default class View {
                 $('.close').click(function(){
                   $('.vimeo').fadeOut().empty();
                   $('.logo').fadeTo(200,1)
-              })
-          })
+                })
+               })
 
         }
 
@@ -131,41 +131,60 @@ export default class View {
 
     // videosArr.forEach((video) => {
 
-      // var videoContainer = $("<div/>", {
-      //   "class": "video-container"
-      // })
+    //   var videoContainer = $("<div/>", {
+    //     "class": "video-container"
+    //   })
 
-      // var videoThumb = $("<div/>", {
-      //   "class": "thumb"
-      // })
+    //   var videoThumb = $("<div/>", {
+    //     "class": "thumb",
+    //     "rel": video.vimeo
+    //   })
 
-      // var img = $("<img/>", {
-      //   "class": "thumb-img",
-      //   "src": video.stills[0],
-      //   "rel": video.vimeo
-      // })
+    //   var img = $("<img/>", {
+    //     "class": "thumb-img",
+    //     "src": video.stills[0]
+        
+    //   })
 
-      // var playButton = $("<img/>", {
-      //   "class": "play-button",
-      //   "src":"./images/play.svg",
-      //
-      // })
+    //   var details = $("<div/>", {
+    //     "class": "thumb-details"
+      
+    //   })
+
+    //   var title = $("<h2/>", {
+    //     "class": "thumb-title",
+    //     "text": video.title
+      
+    //   })
+    //    var info = $("<p/>", {
+    //     "class": "thumb-info",
+    //     "text": video.info
+      
+    //   })
+    //    var credits = $("<p/>", {
+    //     "class": "thumb-credits",
+    //     "text": video.credits
+       
+    //    })
 
 
-      // $(videoContainer).append(videoThumb)
-      // $(videoThumb).append(img)
-      // $(videoThumb).append(playButton)
+    //   $(videoContainer).append(videoThumb)
+    //   $(videoThumb).append(img)
+   
+    //   $(videoContainer).append(details)
+    //   $(details).append(title)
+    //   $(details).append(info)
+    //   $(details).append(credits)
 
-
-      // $('.thumb-container').append(videoContainer)
+    //   $('.thumb-container').append(videoContainer)
     // })
 
+
+   
 
   }
 
   playThumbs () {
-    console.log("play thumbs in view");
-
     $('.thumb').each(function(){
       $(this).click(function(){
         var vimeoID = $(this).attr('rel')
@@ -190,6 +209,13 @@ export default class View {
 
 
     })
+
+  }
+  showThumbDetails(event){
+
+  $(event.target.nextElementSibling).toggle()
+
+ 
 
   }
 

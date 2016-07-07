@@ -51,8 +51,6 @@ export default class Controller {
 
   }
   popupContactButton() {
-    console.log("trying to show contact info in the CONTROLLER")
-
     this.view.showPopupContact()
 
   }
@@ -64,8 +62,11 @@ export default class Controller {
   }
 
   videoPlay() {
-    console.log("video play in controller");
     this.view.playThumbs()
+  }
+
+  videoDetails(event) {
+    this.view.showThumbDetails(event)
   }
 
 

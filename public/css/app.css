@@ -218,11 +218,16 @@ display: none;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+ 
   align-content: center;
   flex-flow: row wrap;
 
 
+}
+.thumb-hide{
+ 
+ width: 250px;
+ background-color: rgba(0, 0, 0, 0.901961);
 }
 
 .video-container {
