@@ -2,6 +2,7 @@ body {
   background-color: black;
   color: OldLace;
   font-family: Verdana, sans-serif;
+  font-size: 1.2rem;
 }
 .link {
   text-decoration: underline;
@@ -32,7 +33,7 @@ header {
   display: flex;
   position: fixed;
   top: 10px;
-  right: 46px;
+    right: 74px;
   /* width: 150px; */
   /* height: 200px; */
   /* text-align: center; */
@@ -224,7 +225,7 @@ display: none;
 .thumb-container {
   margin-top: 150px;
  /* width: 100%;*/
-  
+
   width: calc(100vw);
   display: flex;
   justify-content: center;
@@ -232,13 +233,15 @@ display: none;
   align-content: center;
   flex-flow: row wrap;
 
-
 }
 .thumb-hide{
  
  display: none;
  width: 250px;
  background-color: rgba(0, 0, 0, 0.901961);
+}
+.thumb-title{
+  font-size: 1rem;
 }
 
 .video-container {
@@ -249,8 +252,8 @@ display: none;
 
 .thumb {
   margin: 20px;
-  width: 250px;
-  height: 140px;
+  width: 12.5em;
+  height: 7em;
   border:solid;
   border-color: white;
   overflow: hidden
@@ -260,3 +263,4 @@ display: none;
   width: inherit;
   cursor: pointer;
 }
+
