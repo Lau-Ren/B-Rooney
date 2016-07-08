@@ -41,9 +41,9 @@ export default class Router {
         this.controller.menuPopup()
       })
 
-      $('#popup-about').on('click', (event) => {
-        this.controller.popupAboutButton()
-      })
+      // $('#popup-about').on('click', (event) => {
+      //   this.controller.popupAboutButton()
+      // })
 
       $('#popup-cv').on('click', (event) => {
         this.controller.popupCVButton()

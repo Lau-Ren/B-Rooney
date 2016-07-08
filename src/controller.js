@@ -41,9 +41,9 @@ export default class Controller {
 
   }
 
-  popupAboutButton() {
-    this.view.showPopupAbout()
-  }
+  // popupAboutButton() {
+  //   this.view.showPopupAbout()
+  // }
 
 
   popupCVButton() {

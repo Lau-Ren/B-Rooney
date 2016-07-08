@@ -58,34 +58,34 @@ export default class View {
       $(this).css({ "display": "flex", "justify-content": "center" })
         $('.popup popup-contents').show()
       
-        $('#popup-about__content').show()
+        // $('#popup-about__content').show()
         $('#popup-cv__content').hide()
         $('#popup-contact__content').hide()
         $('.close').click(function(){
           $('.popup').fadeOut();
           $('.logo').fadeTo(200,1)
-          $('#popup-about__content').hide()
+          // $('#popup-about__content').hide()
           $('#popup-cv__content').hide()
           $('#popup-contact__content').hide()
           $('#popup-cv').css({"border-bottom": "none"})
-          $('#popup-about').css({"border-bottom": "none"})
+          // $('#popup-about').css({"border-bottom": "none"})
           $('#popup-contact').css({"border-bottom": "none"})
         })
       })
   }
 
-  showPopupAbout() {
-    console.log("trying to show ABOUT info in the view")
+  // showPopupAbout() {
+  //   console.log("trying to show ABOUT info in the view")
 
-    $('#popup-about__content').show()
-    $('#popup-about').css({"border-bottom":"solid"})
+  //   $('#popup-about__content').show()
+  //   $('#popup-about').css({"border-bottom":"solid"})
 
-    $('#popup-cv__content').hide()
-    $('#popup-contact__content').hide()
-    $('#popup-cv').css({"border-bottom":"none"})
-    $('#popup-contact').css({"border-bottom":"none"})
+  //   $('#popup-cv__content').hide()
+  //   $('#popup-contact__content').hide()
+  //   $('#popup-cv').css({"border-bottom":"none"})
+  //   $('#popup-contact').css({"border-bottom":"none"})
 
-  }
+  // }
 
   showPopupCV() {
         console.log("trying to show CV in the view")
@@ -94,9 +94,9 @@ export default class View {
     $('#popup-cv').css({"border-bottom":"solid"})
 
 
-    $('#popup-about__content').hide()
+    // $('#popup-about__content').hide()
     $('#popup-contact__content').hide()
-    $('#popup-about').css({"border-bottom":"none"})
+    // $('#popup-about').css({"border-bottom":"none"})
     $('#popup-contact').css({"border-bottom":"none"})
   }
 
@@ -106,10 +106,10 @@ export default class View {
     $('#popup-contact').css({"border-bottom":"solid"})
 
 
-    $('#popup-about__content').hide()
+    // $('#popup-about__content').hide()
     $('#popup-cv__content').hide()
     $('#popup-cv').css({"border-bottom":"none"})
-    $('#popup-about').css({"border-bottom":"none"})
+    // $('#popup-about').css({"border-bottom":"none"})
   }
 
   showVideos(videosArr) {
