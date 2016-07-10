@@ -1,7 +1,7 @@
 {
   "name": "Brysons-Portfolio",
   "version": "1.0.0",
-  "description": "Brysons portfolio.",
+  "description": "Bryson Rooney",
   "main": "src/index.js",
   "scripts": {
     "dev:build-js": "watchify  src/index.js -o public/bundle.js -v",

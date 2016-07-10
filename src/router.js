@@ -41,16 +41,16 @@ export default class Router {
         this.controller.menuPopup()
       })
 
-      $('#popup-about').on('click', (event) => {
-        this.controller.popupAboutButton()
-      })
+      // $('#popup-about').on('click', (event) => {
+      //   this.controller.popupAboutButton()
+      // })
 
       $('#popup-cv').on('click', (event) => {
         this.controller.popupCVButton()
       })
 
       $('#popup-contact').on('click', (event) => {
-        console.log("trying to show contact info in the ROUTER")
+
 
         this.controller.popupContactButton()
       })
@@ -59,10 +59,14 @@ export default class Router {
         this.controller.popupVideosButton()
       })
 
+      $('.thumb-title').on('mousedown', (event) => {
+  
+        this.controller.videoDetails(event)
+
+      })
 
 
       $('.thumb').on('click', (event) => {
-        console.log("clicked thumb");
         this.controller.videoPlay()
 
       })
