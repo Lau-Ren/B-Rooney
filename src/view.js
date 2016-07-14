@@ -57,130 +57,93 @@ export default class View {
     $('.popup').fadeIn(function(){
       $(this).css({ "display": "flex", "justify-content": "center" })
         $('.popup popup-contents').show()
-      
-        // $('#popup-about__content').show()
+
+        $('#popup-videos__content').show()
+        $('#popup-videos').css({"border-bottom":"solid"})
+
         $('#popup-cv__content').hide()
+        $('#popup-showreel__content').hide()
         $('#popup-contact__content').hide()
+
         $('.close').click(function(){
           $('.popup').fadeOut();
           $('.logo').fadeTo(200,1)
-          // $('#popup-about__content').hide()
           $('#popup-cv__content').hide()
           $('#popup-contact__content').hide()
+          $('#popup-showreel__content').hide()
           $('#popup-cv').css({"border-bottom": "none"})
-          // $('#popup-about').css({"border-bottom": "none"})
+          $('#popup-showreel').css({"border-bottom": "none"})
           $('#popup-contact').css({"border-bottom": "none"})
         })
       })
   }
 
-  // showPopupAbout() {
-  //   console.log("trying to show ABOUT info in the view")
 
-  //   $('#popup-about__content').show()
-  //   $('#popup-about').css({"border-bottom":"solid"})
-
-  //   $('#popup-cv__content').hide()
-  //   $('#popup-contact__content').hide()
-  //   $('#popup-cv').css({"border-bottom":"none"})
-  //   $('#popup-contact').css({"border-bottom":"none"})
-
-  // }
 
   showPopupCV() {
-        console.log("trying to show CV in the view")
-
     $('#popup-cv__content').show()
     $('#popup-cv').css({"border-bottom":"solid"})
 
-
-    // $('#popup-about__content').hide()
+    $('#popup-showreel__content').hide()
     $('#popup-contact__content').hide()
-    // $('#popup-about').css({"border-bottom":"none"})
+    $('#popup-videos__content').hide()
+
     $('#popup-contact').css({"border-bottom":"none"})
+    $('#popup-showreel').css({"border-bottom":"none"})
+    $('#popup-videos').css({"border-bottom":"none"})
   }
 
   showPopupContact() {
-    console.log("trying to show contact info in the view")
     $('#popup-contact__content').show()
     $('#popup-contact').css({"border-bottom":"solid"})
 
-
-    // $('#popup-about__content').hide()
     $('#popup-cv__content').hide()
+    $('#popup-showreel__content').hide()
+    $('#popup-videos__content').hide()
+
+    $('#popup-showreel').css({"border-bottom":"none"})
     $('#popup-cv').css({"border-bottom":"none"})
-    // $('#popup-about').css({"border-bottom":"none"})
+    $('#popup-videos').css({"border-bottom":"none"})
   }
 
-  showVideos(videosArr) {
+  showPopupShowReel() {
+    $('#popup-showreel__content').show()
+    $('#popup-showreel').css({"border-bottom":"solid"})
 
-    $('.home-view').hide()
-    $('.popup').fadeOut();
-    $('.logo').fadeTo(200,1)
+    $('#popup-cv__content').hide()
+    $('#popup-contact__content').hide()
+    $('#popup-videos__content').hide()
 
-    // $('.thumb-container').empty()
+    $('#popup-contact').css({"border-bottom":"none"})
+    $('#popup-cv').css({"border-bottom":"none"})
+    $('#popup-videos').css({"border-bottom":"none"})
+  }
 
-    $('.video-view').show()
+  showPopupVideos(videosArr) {
+    $('#popup-videos__content').show()
+    $('#popup-videos').css({"border-bottom":"solid"})
 
-      $('.close').click(function(){
-        $('.video-view').fadeOut()
-        $('.home-view').fadeTo(200,1)
-        $('.home-view').show()
-        $('.video-view').hide()
-    })
-
-    // videosArr.forEach((video) => {
-
-    //   var videoContainer = $("<div/>", {
-    //     "class": "video-container"
-    //   })
-
-    //   var videoThumb = $("<div/>", {
-    //     "class": "thumb",
-    //     "rel": video.vimeo
-    //   })
-
-    //   var img = $("<img/>", {
-    //     "class": "thumb-img",
-    //     "src": video.stills[0]
-        
-    //   })
-
-    //   var details = $("<div/>", {
-    //     "class": "thumb-details"
-      
-    //   })
-
-    //   var title = $("<h2/>", {
-    //     "class": "thumb-title",
-    //     "text": video.title
-      
-    //   })
-    //    var info = $("<p/>", {
-    //     "class": "thumb-info",
-    //     "text": video.info
-      
-    //   })
-    //    var credits = $("<p/>", {
-    //     "class": "thumb-credits",
-    //     "text": video.credits
-       
-    //    })
+    // $('.home-view').hide()
+    // $('.popup').fadeOut();
+    // $('.logo').fadeTo(200,1)
 
 
-    //   $(videoContainer).append(videoThumb)
-    //   $(videoThumb).append(img)
-   
-    //   $(videoContainer).append(details)
-    //   $(details).append(title)
-    //   $(details).append(info)
-    //   $(details).append(credits)
+    // $('.video-view').show()
 
-    //   $('.thumb-container').append(videoContainer)
+    //   $('.close').click(function(){
+    //     $('.video-view').fadeOut()
+    //     $('.home-view').fadeTo(200,1)
+    //     $('.home-view').show()
+    //     $('.video-view').hide()
     // })
 
+    $('#popup-cv__content').hide()
+    $('#popup-contact__content').hide()
+    $('#popup-showreel__content').hide()
 
-   
+    $('#popup-contact').css({"border-bottom":"none"})
+    $('#popup-cv').css({"border-bottom":"none"})
+    $('#popup-showreel').css({"border-bottom":"none"})
 
   }
 
@@ -192,14 +155,14 @@ export default class View {
           window.location = 'http://player.vimeo.com/video/'+vimeoID
         } else {
           $('.vimeo').empty();
-          $('.vimeo').html('<div class="close"></div><iframe onload="this.style.visibility = \'visible\'; $(\'.video-view\').fadeTo(200,0); $(\'.logo\').fadeTo(200,0);" src="http://player.vimeo.com/video/'+vimeoID+'?autoplay=1" width="960" height="541" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>')
+          $('.vimeo').html('<div class="close"></div><iframe onload="this.style.visibility = \'visible\'; $(\'.popup\').fadeTo(200,0); $(\'.logo\').fadeTo(200,0);" src="http://player.vimeo.com/video/'+vimeoID+'?autoplay=1" width="960" height="541" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>')
               .fadeIn(function(){
                 $('.vimeo iframe').show()
                 $('.close').click(function(){
                   $('.vimeo').fadeOut().empty();
                   $('.logo').fadeTo(200,1)
-                  $('.video-view').fadeTo(200,1)
-                  $('.video-view').show()
+                  $('.popup').fadeTo(200,1)
+                  $('.popup').show()
               })
           })
 

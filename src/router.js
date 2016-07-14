@@ -59,6 +59,10 @@ export default class Router {
         this.controller.popupVideosButton()
       })
 
+      $('#popup-showreel').on('click', (event) => {
+        this.controller.popupShowReelButton()
+      })
+
       $('.thumb-title').on('mousedown', (event) => {
   
         this.controller.videoDetails(event)

@@ -57,10 +57,13 @@ export default class Controller {
   popupVideosButton() {
     var videos = this.model.getVideos()
 
-    this.view.showVideos(videos)
+    this.view.showPopupVideos(videos)
 
   }
 
+  popupShowReelButton() {
+     this.view.showPopupShowReel()
+  }
   videoPlay() {
     this.view.playThumbs()
   }
