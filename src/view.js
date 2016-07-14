@@ -1,10 +1,6 @@
 import $ from 'jquery'
 
 export default class View {
-  renderModel (model) {
-    console.log('The data from the model is: ' + model.data)
-  }
-
   revealDrawer () {
       $('.project-credits').hide()
       $('.project-info').hide()
@@ -27,12 +23,9 @@ export default class View {
                   $('.logo').fadeTo(200,1)
                 })
                })
-
         }
 
       })
-
-
     })
 
   }
@@ -123,20 +116,6 @@ export default class View {
     $('#popup-videos__content').show()
     $('#popup-videos').css({"border-bottom":"solid"})
 
-    // $('.home-view').hide()
-    // $('.popup').fadeOut();
-    // $('.logo').fadeTo(200,1)
-
-
-    // $('.video-view').show()
-
-    //   $('.close').click(function(){
-    //     $('.video-view').fadeOut()
-    //     $('.home-view').fadeTo(200,1)
-    //     $('.home-view').show()
-    //     $('.video-view').hide()
-    // })
-
     $('#popup-cv__content').hide()
     $('#popup-contact__content').hide()
     $('#popup-showreel__content').hide()
@@ -165,22 +144,13 @@ export default class View {
                   $('.popup').show()
               })
           })
-
         }
-
       })
-
-
     })
-
   }
-  showThumbDetails(event){
-
+showThumbDetails(event){
   $(event.target.nextElementSibling).toggle()
-
- 
-
-  }
+}
 
 
 }

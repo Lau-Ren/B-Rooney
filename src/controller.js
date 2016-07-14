@@ -8,13 +8,6 @@ export default class Controller {
     this.view = new View()
   }
 
-  dance () {
-    console.log('Dancing in the controller! ~~~')
-
-    this.model.getData()
-    this.view.renderModel(this.model)
-  }
-
   getMoreInfo () {
     this.view.revealDrawer()
   }
@@ -40,11 +33,6 @@ export default class Controller {
     this.view.showPopup()
 
   }
-
-  // popupAboutButton() {
-  //   this.view.showPopupAbout()
-  // }
-
 
   popupCVButton() {
     this.view.showPopupCV()

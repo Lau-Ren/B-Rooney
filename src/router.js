@@ -8,10 +8,6 @@ export default class Router {
   }
 
   listen () {
-    console.log('listening in the router')
-
-    // this is where you put your event listeners
-    // which call controller actions
     $(() => {
       $(document).on('keydown', (event) => {
         this.controller.dance()
@@ -40,10 +36,6 @@ export default class Router {
       $('.logo').on('click', (event) => {
         this.controller.menuPopup()
       })
-
-      // $('#popup-about').on('click', (event) => {
-      //   this.controller.popupAboutButton()
-      // })
 
       $('#popup-cv').on('click', (event) => {
         this.controller.popupCVButton()
