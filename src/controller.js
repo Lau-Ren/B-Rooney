@@ -12,8 +12,8 @@ export default class Controller {
     this.view.revealDrawer()
   }
 
-  playButton () {
-    this.view.playVideo()
+  playButton (id) {
+    this.view.playVideo(id)
 
   }
   drawerInfoButton () {

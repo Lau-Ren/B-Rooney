@@ -18,7 +18,8 @@ export default class Router {
       })
 
       $('.play-button').on('click', (event) => {
-        this.controller.playButton()
+        let vimeoID = event.target.attributes.rel.value
+        this.controller.playButton(vimeoID)
       })
 
       $('#drawer-info').on('click', (event) => {
@@ -63,7 +64,6 @@ export default class Router {
 
 
       $('.thumb').on('click', (event) => {
-        console.log("click one in router", );
         let vimeoID = event.target.parentElement.attributes.rel.value
 
         this.controller.videoPlay(vimeoID)
