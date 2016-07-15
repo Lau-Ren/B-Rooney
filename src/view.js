@@ -134,7 +134,7 @@ export default class View {
           window.location = 'http://player.vimeo.com/video/'+vimeoID
         } else {
           $('.vimeo').empty();
-          $('.vimeo').html('<div class="close"></div><iframe onload="this.style.visibility = \'visible\'; $(\'.popup\').fadeTo(200,0); $(\'.logo\').fadeTo(200,0);" src="http://player.vimeo.com/video/'+vimeoID+'?autoplay=1" width="960" height="541" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>')
+          $('.vimeo').html('<div class="close"></div><iframe onload="this.style.visibility = \'visible\'; $(\'.logo\').fadeTo(200,0);" src="http://player.vimeo.com/video/'+vimeoID+'?autoplay=1" width="960" height="541" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>')
               .fadeIn(function(){
                 $('.vimeo iframe').show()
                 $('.close').click(function(){
