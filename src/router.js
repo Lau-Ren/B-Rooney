@@ -63,7 +63,10 @@ export default class Router {
 
 
       $('.thumb').on('click', (event) => {
-        this.controller.videoPlay()
+        console.log("click one in router", );
+        let vimeoID = event.target.parentElement.attributes.rel.value
+
+        this.controller.videoPlay(vimeoID)
 
       })
 

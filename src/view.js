@@ -126,10 +126,9 @@ export default class View {
 
   }
 
-  playThumbs () {
-    $('.thumb').each(function(){
-      $(this).click(function(){
-        var vimeoID = $(this).attr('rel')
+  playThumbs (id) {
+   
+        var vimeoID = id
         if($(window).width()<700) {
           window.location = 'http://player.vimeo.com/video/'+vimeoID
         } else {
@@ -145,8 +144,7 @@ export default class View {
               })
           })
         }
-      })
-    })
+   
   }
 showThumbDetails(event){
   $(event.target.nextElementSibling).toggle()

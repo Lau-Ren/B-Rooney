@@ -52,8 +52,8 @@ export default class Controller {
   popupShowReelButton() {
      this.view.showPopupShowReel()
   }
-  videoPlay() {
-    this.view.playThumbs()
+  videoPlay(id) {
+    this.view.playThumbs(id)
   }
 
   videoDetails(event) {
