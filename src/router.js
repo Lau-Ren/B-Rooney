@@ -12,6 +12,10 @@ export default class Router {
       $(document).on('keydown', (event) => {
         this.controller.dance()
       })
+      $(window).load(function() {
+        // Animate loader off screen
+        $(".splash").fadeOut("slow");;
+      });
 
       $('.project-title').on('click', (event) => {
         this.controller.getMoreInfo()
