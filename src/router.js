@@ -62,7 +62,7 @@ export default class Router {
 
       $('.thumb-title').on('mousedown', (event) => {
   
-        this.controller.videoDetails(event)
+        // this.controller.videoDetails(event)
 
       })
 
