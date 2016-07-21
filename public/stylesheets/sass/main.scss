@@ -1,0 +1,116 @@
+@import "base/variables";
+
+@import "components/splash";
+@import "components/vimeo";
+@import "components/header";
+@import "components/popup";
+@import "components/videos";
+
+
+body {
+  background-color: $dark-color;
+  color: OldLace;
+  font-family: Verdana, sans-serif;
+  font-size: 1.2rem;
+}
+
+.link {
+  text-decoration: underline;
+  color: $light-color;
+
+}
+ul{
+  list-style: none;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  opacity: 1;
+  z-index: 50;
+  cursor: pointer;
+  flex-direction: column;
+
+}
+
+/*Central container*/
+
+.box{
+  background: rgba(3, 3, 3, 0.5);
+  display: flex;
+  position: fixed;
+  height: calc(100vh);
+  width: calc(100vw);
+  text-align: center;
+  opacity: 1;
+  z-index: 10;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-title{
+  width: 500px;
+  cursor: pointer;
+}
+
+.drawer {
+  width:50%;
+}
+
+.drawer-index{
+ display: none;
+}
+
+
+.project-info{
+  display: none;
+
+}
+
+.project-credits{
+  display: none;
+
+}
+
+.drawer-item{
+  cursor: pointer;
+  padding: 10px;
+  display: inline-flex;
+  text-align: center;
+
+}
+
+.drawer-item:hover {
+  border-bottom: solid;
+
+}
+
+#popup-cv__content{
+  text-align: left;
+}
+
+/*SLIDES*/
+.slides-navigation{
+display: none;
+}
+
+.slides-pagination{
+display: none;
+}
+
+.play-button {
+  cursor: pointer;
+
+    z-index: -1;
+
+}
+
+.play-button:hover {
+  background: url(../../../images/playOver.svg)
+}

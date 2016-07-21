@@ -7,6 +7,7 @@
     "dev:build-js": "watchify  src/index.js -o public/bundle.js -v",
     "dev:watch": "npm run dev:build-js",
     "dev:start": "http-server public -p 8008",
+    "sass": "node-sass -w public/stylesheets/sass/ -o public/stylesheets/css/",
     "postinstall": "browserify src/index.js -o public/bundle.js -t babelify",
     "start": "node index.js"
   },
@@ -43,5 +44,8 @@
     "jquery": "^2.2.0",
     "path": "^0.12.7",
     "watchify": "^3.7.0"
+  },
+  "devDependencies": {
+    "node-sass": "^3.8.0"
   }
 }
