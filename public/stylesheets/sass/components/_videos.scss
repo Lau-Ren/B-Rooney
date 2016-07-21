@@ -9,7 +9,6 @@
 
 }
 
-
 .thumb-container {
   margin-top: 150px;
  /* width: 100%;*/
@@ -17,13 +16,13 @@
   width: calc(100vw);
   display: flex;
   justify-content: center;
- 
+
   align-content: center;
   flex-flow: row wrap;
 
 }
 .thumb-hide{
- 
+
  display: none;
  width: 250px;
  background-color: $transparent-color;

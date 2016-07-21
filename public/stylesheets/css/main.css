@@ -136,7 +136,7 @@
   width: 12.5em;
   height: 7em;
   border: solid;
-  border-color: white;
+  border-color: OldLace;
   overflow: hidden; }
 
 .thumb-img {
@@ -157,7 +157,7 @@ body {
 
 .link {
   text-decoration: underline;
-  color: white; }
+  color: OldLace; }
 
 ul {
   list-style: none; }
