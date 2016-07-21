@@ -40,6 +40,10 @@
   max-width: 280px;
 }
 
+.video-genre {
+  font-style: italic;
+  font-size: 0.9em;
+}
 .thumb {
   margin: 20px;
   width: 12.5em;
@@ -56,6 +60,7 @@
 
 .thumb-details{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   max-width: 240px;
 }

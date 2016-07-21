@@ -1,5 +1,6 @@
 export const videos = [{
   "title": "Cocoon",
+  "genre":"fashion",
   "stills": [
     "./images/cocoon/cocoon-01.png"
   ],
@@ -8,6 +9,7 @@ export const videos = [{
   "credits": "Directed by Sophie Rzepecky & Bryson Rooney. Shot by Bryson Rooney. Music by Glass Vaults. Starring Monica Buchan-Ng"
 }, {
   "title": "Cuba Dupa",
+  "genre":"promotion",
   "img-title": "images/cuba-dupa/project-title.png",
   "stills": [
     "./images/cuba-dupa/cuba-dupa-01.png"
@@ -17,6 +19,7 @@ export const videos = [{
   "credits": "Bryson Rooney- Director, DOP Ben Forman- Producer, Editor Aaron Alexander- Producer Camera- Sony FS7, Panasonic GH4, BlackMagic 4K"
 }, {
   "title": "Making a Beer Can",
+  "genre":"advert",
   "img-title": "images/GP-making/project-title.png",
   "stills": [
     "./images/GP-making/making-01.png"
@@ -26,6 +29,7 @@ export const videos = [{
   "credits": "Bryson Rooney- Director, DOP, Editor Jos Ruffel- Producer Camera- BlackMagic 4k"
 }, {
   "title": "Zoo Brews",
+  "genre":"promotion",
   "img-title": "images/GP-zoobrews/project-title.png",
   "stills": [
     ""
@@ -35,6 +39,7 @@ export const videos = [{
   "credits": "Bryson Rooney- Director, DOP, Editor, ColouristJos Ruffel- Producer"
 }, {
   "title": "The Halcyon Jacket",
+  "genre":"advert",
   "img-title": "images/halcyon-jacket/project-title.png",
   "stills": [
     "./images/halcyon-jacket/halcyon-jacket-01.png"
@@ -44,6 +49,7 @@ export const videos = [{
   "credits": "Bryson Rooney- Director, Editor Ben Forman- DOP, Colourist Jonathon Hall- Producer Camera- Red Epic"
 }, {
   "title": "Made to Measure",
+  "genre":"advert",
   "img-title": "images/made-to-measure/project-title.png",
   "stills": [
     "./images/made-to-measure/made-to-measure-01.png"
@@ -53,6 +59,7 @@ export const videos = [{
   "credits": "Bryson Rooney- Director, DOP, Editor, Colourist Jess Charlton- 1st AC, Focus Puller, Camera Operator Ben Forman- Producer Jonathon Hall- Producer Camera- Red Epic, Zeiss Primes"
 }, {
   "title": "The Crossing",
+  "genre":"advert",
   "img-title": "images/the-crossing/project-title.png",
   "stills": [
     "./images/the-crossing/the-crossing-01.png"
@@ -62,6 +69,7 @@ export const videos = [{
   "credits": "Bryson Rooney- Director, DOP, Editor, Colourist Nick & Nevada Leckie- Producers Camera- Panasonic GH4 on Ronin steadicam"
 }, {
   "title": "Wool Runners",
+  "genre":"kickstarter",
   "img-title": "images/wool-runners/project-title.png",
   "stills": [
     "./images/wool-runners/woolrunners-01.png"
@@ -71,6 +79,7 @@ export const videos = [{
   "credits": "Bryson Rooney- Director, DOP, Editor Ben Forman- Producer Tim & Paul Brown- Producer Camera- Canon 5D MKIII"
 }, {
   "title": "Coal Town",
+  "genre":"music video",
   "img-title": "images/coaltown/project-title.png",
   "stills": [
     "./images/coaltown/coaltown-01.png"

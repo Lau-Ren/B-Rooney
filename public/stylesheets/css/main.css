@@ -127,6 +127,10 @@
   align-items: center;
   max-width: 280px; }
 
+.video-genre {
+  font-style: italic;
+  font-size: 0.9em; }
+
 .thumb {
   margin: 20px;
   width: 12.5em;
@@ -141,13 +145,14 @@
 
 .thumb-details {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   max-width: 240px; }
 
 body {
   background-color: #030303;
   color: OldLace;
-  font-family: Verdana, sans-serif;
+  font-family: "museo-sans", sans-serif;
   font-size: 1.2rem; }
 
 .link {
